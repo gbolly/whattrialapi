@@ -134,8 +134,8 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'authentication.CustomUser'
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = ['http://localhost:3000', "http://127.0.0.1", "https://what-trial-gbolly-react-app-stage.us.aldryn.io/"]
-CORS_ALLOWED_ORIGINS = ["http://localhost:3000", "https://what-trial-gbolly-react-app-stage.us.aldryn.io/"]
+CSRF_TRUSTED_ORIGINS = ['http://localhost:3000', "http://127.0.0.1", "https://what-trial-gbolly-react-app-stage.us.aldryn.io"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:3000", "https://what-trial-gbolly-react-app-stage.us.aldryn.io"]
 CORS_ALLOW_HEADERS = (
     "accept",
     "authorization",
@@ -144,3 +144,4 @@ CORS_ALLOW_HEADERS = (
     "x-csrftoken",
     "x-requested-with",
 )
+SESSION_COOKIE_SAMESITE = None
