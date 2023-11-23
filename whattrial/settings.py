@@ -79,19 +79,6 @@ WSGI_APPLICATION = 'whattrial.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': os.environ.get("DB_NAME"),
-#         "USER": os.environ.get("DB_USER"),
-#         "PASSWORD": os.environ.get("DB_PASSWORD"),
-#         "HOST": os.environ.get("DB_HOST"),
-#         "PORT": os.environ.get("DB_PORT"),
-#         'TEST': {
-#             'NAME': f'tests_{os.environ.get("DB_NAME")}',
-#         }
-#     }
-# }
 DATABASE_URL = os.environ.get('DATABASE_URL')
 DATABASES = {'default': dj_database_url.parse(DATABASE_URL)}
 
@@ -147,8 +134,8 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'authentication.CustomUser'
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = ['http://localhost:3000', "http://127.0.0.1"]
-CORS_ALLOWED_ORIGINS = ["http://localhost:3000"]
+CSRF_TRUSTED_ORIGINS = ['http://localhost:3000', "http://127.0.0.1", "https://what-trial-gbolly-react-app-stage.us.aldryn.io/"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:3000", "https://what-trial-gbolly-react-app-stage.us.aldryn.io/"]
 CORS_ALLOW_HEADERS = (
     "accept",
     "authorization",
