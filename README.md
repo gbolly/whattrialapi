@@ -24,8 +24,8 @@ Visit [App link goes here](http://divio.com).
     "gw^9ej(l4vq%d_06xig$vw+b(-@#00@8l7jlv77=sq5r_sf3nu"
 ```
 - Run `docker-compose build`. This should build the project in a container
-- Run `docker-compose up`. This will run migration and start up both frontend and backend servers.
-- You can navigation to `http://localhost:3000/` to interact with the app.
+- Run `docker-compose up`. This will run migration the backend servers.
+- You can navigation to `http://localhost:8000/` to interact with the API.
 
 ## API Endpoints
 - POST login: `http://127.0.0.1:8000/api/user/login/`
