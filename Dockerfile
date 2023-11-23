@@ -21,4 +21,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app/backend/
 
 # CMD ["sh", "-c", "sleep 10 && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"]
-CMD ["uwsgi", "--module=myapp.wsgi", "--http=0.0.0.0:80"]
+CMD ["uwsgi", "--module=whattrial.wsgi", "--http=0.0.0.0:80"]
