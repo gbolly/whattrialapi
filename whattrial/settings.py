@@ -144,5 +144,6 @@ CORS_ALLOW_HEADERS = (
     "x-csrftoken",
     "x-requested-with",
 )
-SESSION_COOKIE_SAMESITE = None
-SESSION_COOKIE_DOMAIN  = '.us.aldryn.io'
+# SESSION_COOKIE_SAMESITE = None
+# SESSION_COOKIE_DOMAIN  = '.us.aldryn.io'
+# CSRF_COOKIE_SAMESITE = None
