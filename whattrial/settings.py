@@ -145,3 +145,4 @@ CORS_ALLOW_HEADERS = (
     "x-requested-with",
 )
 SESSION_COOKIE_SAMESITE = None
+SESSION_COOKIE_DOMAIN  = '.us.aldryn.io'
